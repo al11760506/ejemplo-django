@@ -47,16 +47,12 @@ WSGI_APPLICATION = 'hola.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
-import MySQLdb
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'books',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': '',
-        'PORT':'',
-    }
+        
 }
 
 # Internationalization
